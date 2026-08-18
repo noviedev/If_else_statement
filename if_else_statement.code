@@ -1,0 +1,46 @@
+<?php
+
+// 1. if statement
+$hasProfessionalPhotos = true;
+if ($hasProfessionalPhotos) {
+    echo "Action: Boost this unit's listing to the front page of the website!\n";
+}
+
+// 2. if...else statement
+$isNewlyRenovated = true;
+if ($isNewlyRenovated) {
+    echo "Headline: 'Stunning Modern Upgrades - Move-In Ready!'\n";
+} else {
+    echo "Headline: 'Charming Classic Unit with Great Potential!'\n";
+}
+
+// 3. if...elseif...else statement
+$distanceToTransit = 1.5; // distance in kilometers
+if ($distanceToTransit <= 0.5) {
+    echo "Target Audience: Commuters looking for immediate transit access.\n";
+} elseif ($distanceToTransit <= 3.0) {
+    echo "Target Audience: Young professionals who drive or bike.\n";
+} else {
+    echo "Target Audience: Families seeking a quiet neighborhood away from traffic.\n";
+}
+
+// 4. switch statement
+$unitType = "studio";
+switch ($unitType) {
+    case "studio":
+        echo "Ad Strategy: Run Instagram and TikTok ads targeting young professionals.\n";
+        break;
+    case "family_home":
+        echo "Ad Strategy: Post on local community Facebook groups and family portals.\n";
+        break;
+    case "luxury_condo":
+        echo "Ad Strategy: Create a 3D virtual tour and send to premium brokers.\n";
+        break;
+    case "commercial":
+        echo "Ad Strategy: List on LinkedIn and business real estate platforms.\n";
+        break;
+    default:
+        echo "Ad Strategy: Post to standard property listing websites.\n";
+}
+
+?>
